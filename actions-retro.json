@@ -1,477 +1,194 @@
-[
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Solliciter un expert externe"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Organiser une formation pour l'équipe"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Organiser une réunion de partage de connaissances au sein de l'équipe"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Identifier un besoin sur une compétence particulière"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Faire accompagner ou coacher l'équipe sur un sujet"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Documenter un sujet connu d'une seule personne"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Mettre en place des binômes sur certains sujets"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Former un remplaçant sur une activité"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Onboarder un nouveau membre"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Définir une procédure ou des documents d'onboarding"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Développement des compétences et partage de connaissances",
-    "action": "Répartir, organiser les responsabilités techniques ; les référents"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Adapter les horaires des créneaux récurrents"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Modifier la durée ou la périodicité des créneaux récurrents"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Modifier le contenu des créneaux récurrents"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Réévaluer la pertinence de certains créneaux"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Supprimer ou fusionner des réunions devenues inutiles"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Organisation des événements et fonctionnement collectif",
-    "action": "Organiser ponctuellement un atelier"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Documentation, rangement, hygiène de l'information",
-    "action": "Nettoyer ou réorganiser Jira"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Documentation, rangement, hygiène de l'information",
-    "action": "Ranger Confluence, archiver les pages obsolètes, réorganiser les dossiers et espaces partagés"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Documentation, rangement, hygiène de l'information",
-    "action": "Mettre à jour la documentation"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Documentation, rangement, hygiène de l'information",
-    "action": "Supprimer les doublons ou les informations contradictoires"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Amélioration du processus et des règles de travail",
-    "action": "Créer ou améliorer une Definition of Ready ou une Definition of Done"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Amélioration du processus et des règles de travail",
-    "action": "Clarifier les étapes de traitement d'un sujet (backlog refinement, kanban d'affinage, etc.)"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Amélioration du processus et des règles de travail",
-    "action": "Améliorer le processus de test, validation, déploiement"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Amélioration du processus et des règles de travail",
-    "action": "Accélérer les processus, réduire les frictions dans le flux de travail"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Obtenir un accès manquant ou des droits à un outil"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Améliorer un poste ou un environnement de développement"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Acheter ou remplacer un équipement"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Configurer correctement un logiciel, un environnement de test"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Mener une action de relance, réduire le temps d'attente"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Identifier des technologies à évaluer"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Réaliser des expérimentations, des PoC"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Discuter des questions techniques pendant un prochain sprint"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Environnement technique, outils et conditions matérielles, expérimentations",
-    "action": "Changer, améliorer les outils utilisés par l'équipe"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Dynamique d'équipe, relations humaines",
-    "action": "Clarifier une tension ou un conflit"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Dynamique d'équipe, relations humaines",
-    "action": "Organiser un échange de feedback"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Dynamique d'équipe, relations humaines",
-    "action": "Améliorer l'écoute ou la participation pendant les réunions"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Dynamique d'équipe, relations humaines",
-    "action": "Faire davantage de pair programming ou de travail en binôme"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Dynamique d'équipe, relations humaines",
-    "action": "Prévoir un temps de cohésion ou d'intégration"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Rôles, responsabilités, prise de décision",
-    "action": "Clarifier qui est responsable de quoi, clarifier le rôle du Product Owner, du Scrum Master ou des référents techniques"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Rôles, responsabilités, prise de décision",
-    "action": "Identifier un responsable pour une activité récurrente"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Rôles, responsabilités, prise de décision",
-    "action": "Définir qui peut prendre certaines décisions"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Rôles, responsabilités, prise de décision",
-    "action": "Éviter que certaines tâches ne reposent toujours sur la même personne"
-  },
-  {
-    "perimetre": "Equipe",
-    "categorie": "Rôles, responsabilités, prise de décision",
-    "action": "Définir un mécanisme d'arbitrage en cas de désaccord"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Ranger ou restructurer le backlog"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Améliorer la qualité des éléments du backlog"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Identifier des questions fonctionnelles à clarifier"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Échanger avec les parties prenantes métier (Business Owners, Business Analysts, utilisateurs, etc.)"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Identifier des questions techniques à approfondir"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Améliorer les critères d'acceptation"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Produit : qualité du backlog, clarifications du backlog",
-    "action": "Améliorer la Definition of Ready ou la Definition of Done"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Préparer certains sujets pour un prochain sprint"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Ajouter ou améliorer des tests automatisés"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Corriger une dette technique précise"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Renforcer les revues de code, mettre en place du pair programming pour améliorer la qualité"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Améliorer la qualité du code sur certains points précis (commentaires, rapports Sonar, etc.)"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Automatiser une opération manuelle, DevOps"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Stabiliser les environnements"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Améliorer la supervision, les logs ou les alertes"
-  },
-  {
-    "perimetre": "Produit",
-    "categorie": "Qualité logicielle et dette technique",
-    "action": "Traiter des problèmes de performance ou de sécurité (propriétés non fonctionnelles, globales)"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Coordination et communication avec les parties prenantes",
-    "action": "Planifier une réunion ou organiser un atelier avec des parties prenantes (utilisateurs, autres équipes, métier, UX/UI, etc.)"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Coordination et communication avec les parties prenantes",
-    "action": "Identifier les messages à faire passer aux parties prenantes"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Coordination et communication avec les parties prenantes",
-    "action": "Communiquer à l'extérieur de l'équipe (via les démos/revues ou en dehors des démos/revues sur un aspect particulier)"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Coordination et communication avec les parties prenantes",
-    "action": "Organiser une réunion d'information ou de formation"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Recueillir davantage de retours utilisateurs (en plus des démos), mieux prendre en compte les retours"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Organiser une démonstration ou une session de test approfondie avec des parties prenantes particulières"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Clarifier la valeur attendue d'une fonctionnalité"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Vérifier une hypothèse produit"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Discuter, revoir les priorités"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Relation avec les utilisateurs et valeur métier du produit",
-    "action": "Mieux relier les éléments du backlog aux objectifs produit"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Gestion de dépendances et coopération interéquipes",
-    "action": "Résoudre un problème de dépendance avec une autre équipe"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Gestion de dépendances et coopération interéquipes",
-    "action": "Alerter sur une dépendance qui risque de provoquer un retard"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Gestion de dépendances et coopération interéquipes",
-    "action": "Organiser un échange ou un atelier interéquipes"
-  },
-  {
-    "perimetre": "Contexte",
-    "categorie": "Gestion de dépendances et coopération interéquipes",
-    "action": "Solliciter une équipe externe pour obtenir une contribution ou une décision"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Remonter un risque"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Alerter sur un problème"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Signaler un manque de main-d'œuvre"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Demander des personnes supplémentaires, des compétences particulières"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Demander davantage de délai"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Rendre visible un retard ou une difficulté plutôt que la masquer, expliquer, transparence"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Solliciter l'aide d'experts externes"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
-    "action": "Escalader au niveau de l'organisation pour résoudre un conflit entre équipes, demander un arbitrage"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Réduire le nombre de sujets commencés simultanément (WIP)"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Rééquilibrer la charge entre les personnes"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Réserver de la capacité pour les imprévus"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Réduire les interruptions"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Revoir la taille des éléments pris dans le sprint"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Adapter l'engagement de l'équipe à sa capacité réelle"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
-    "action": "Mieux gérer les urgences et les demandes entrantes"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Définir une mesure pour vérifier si l'amélioration fonctionne (business value livrée, nombre de story points réalisés, etc.)"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Calculer, suivre un indicateur"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Comparer la situation avant et après une expérimentation"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Analyser les causes d'un délai ou d'un incident"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Vérifier à la prochaine rétrospective si l'action a produit un effet"
-  },
-  {
-    "perimetre": "Plan",
-    "categorie": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
-    "action": "Arrêter une expérimentation qui ne donne pas de résultat"
-  }
-]
+{
+  "perimetres": [
+    {
+      "nom": "Équipe",
+      "categories": [
+        {
+          "nom": "Développement des compétences et partage de connaissances",
+          "actions": [
+            "Solliciter un expert externe",
+            "Organiser une formation pour l'équipe",
+            "Organiser une réunion de partage de connaissances au sein de l'équipe",
+            "Identifier un besoin sur une compétence particulière",
+            "Faire accompagner ou coacher l'équipe sur un sujet",
+            "Documenter un sujet connu d'une seule personne",
+            "Mettre en place des binômes sur certains sujets",
+            "Former un remplaçant sur une activité",
+            "Onboarder un nouveau membre",
+            "Définir une procédure ou des documents d'onboarding",
+            "Répartir, organiser les responsabilités techniques ; les référents"
+          ]
+        },
+        {
+          "nom": "Organisation des événements et fonctionnement collectif",
+          "actions": [
+            "Adapter les horaires des créneaux récurrents",
+            "Modifier la durée ou la périodicité des créneaux récurrents",
+            "Modifier le contenu des créneaux récurrents",
+            "Réévaluer la pertinence de certains créneaux",
+            "Supprimer ou fusionner des réunions devenues inutiles",
+            "Organiser ponctuellement un atelier"
+          ]
+        },
+        {
+          "nom": "Documentation, rangement, hygiène de l'information",
+          "actions": [
+            "Nettoyer ou réorganiser Jira",
+            "Ranger Confluence, archiver les pages obsolètes, réorganiser les dossiers et espaces partagés",
+            "Mettre à jour la documentation",
+            "Supprimer les doublons ou les informations contradictoires"
+          ]
+        },
+        {
+          "nom": "Amélioration du processus et des règles de travail",
+          "actions": [
+            "Créer ou améliorer une Definition of Ready ou une Definition of Done",
+            "Clarifier les étapes de traitement d'un sujet (backlog refinement, kanban d'affinage, etc.)",
+            "Améliorer le processus de test, validation, déploiement",
+            "Accélérer les processus, réduire les frictions dans le flux de travail"
+          ]
+        },
+        {
+          "nom": "Environnement technique, outils et conditions matérielles, expérimentations",
+          "actions": [
+            "Obtenir un accès manquant ou des droits à un outil",
+            "Améliorer un poste ou un environnement de développement",
+            "Acheter ou remplacer un équipement",
+            "Configurer correctement un logiciel, un environnement de test",
+            "Mener une action de relance, réduire le temps d'attente",
+            "Identifier des technologies à évaluer",
+            "Réaliser des expérimentations, des PoC",
+            "Discuter des questions techniques pendant un prochain sprint",
+            "Changer, améliorer les outils utilisés par l'équipe"
+          ]
+        },
+        {
+          "nom": "Dynamique d'équipe, relations humaines",
+          "actions": [
+            "Clarifier une tension ou un conflit",
+            "Organiser un échange de feedback",
+            "Améliorer l'écoute ou la participation pendant les réunions",
+            "Faire davantage de pair programming ou de travail en binôme",
+            "Prévoir un temps de cohésion ou d'intégration"
+          ]
+        },
+        {
+          "nom": "Rôles, responsabilités, prise de décision",
+          "actions": [
+            "Clarifier qui est responsable de quoi, clarifier le rôle du Product Owner, du Scrum Master ou des référents techniques",
+            "Identifier un responsable pour une activité récurrente",
+            "Définir qui peut prendre certaines décisions",
+            "Éviter que certaines tâches ne reposent toujours sur la même personne",
+            "Définir un mécanisme d'arbitrage en cas de désaccord"
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Produit",
+      "categories": [
+        {
+          "nom": "Produit : qualité du backlog, clarifications du backlog",
+          "actions": [
+            "Ranger ou restructurer le backlog",
+            "Améliorer la qualité des éléments du backlog",
+            "Identifier des questions fonctionnelles à clarifier",
+            "Échanger avec les parties prenantes métier (Business Owners, Business Analysts, utilisateurs, etc.)",
+            "Identifier des questions techniques à approfondir",
+            "Améliorer les critères d'acceptation",
+            "Améliorer la Definition of Ready ou la Definition of Done"
+          ]
+        },
+        {
+          "nom": "Qualité logicielle et dette technique",
+          "actions": [
+            "Préparer certains sujets pour un prochain sprint",
+            "Ajouter ou améliorer des tests automatisés",
+            "Corriger une dette technique précise",
+            "Renforcer les revues de code, mettre en place du pair programming pour améliorer la qualité",
+            "Améliorer la qualité du code sur certains points précis (commentaires, rapports Sonar, etc.)",
+            "Automatiser une opération manuelle, DevOps",
+            "Stabiliser les environnements",
+            "Améliorer la supervision, les logs ou les alertes",
+            "Traiter des problèmes de performance ou de sécurité (propriétés non fonctionnelles, globales)"
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Contexte",
+      "categories": [
+        {
+          "nom": "Coordination et communication avec les parties prenantes",
+          "actions": [
+            "Planifier une réunion ou organiser un atelier avec des parties prenantes (utilisateurs, autres équipes, métier, UX/UI, etc.)",
+            "Identifier les messages à faire passer aux parties prenantes",
+            "Communiquer à l'extérieur de l'équipe (via les démos/revues ou en dehors des démos/revues sur un aspect particulier)",
+            "Organiser une réunion d'information ou de formation"
+          ]
+        },
+        {
+          "nom": "Relation avec les utilisateurs et valeur métier du produit",
+          "actions": [
+            "Recueillir davantage de retours utilisateurs (en plus des démos), mieux prendre en compte les retours",
+            "Organiser une démonstration ou une session de test approfondie avec des parties prenantes particulières",
+            "Clarifier la valeur attendue d'une fonctionnalité",
+            "Vérifier une hypothèse produit",
+            "Discuter, revoir les priorités",
+            "Mieux relier les éléments du backlog aux objectifs produit"
+          ]
+        },
+        {
+          "nom": "Gestion de dépendances et coopération interéquipes",
+          "actions": [
+            "Résoudre un problème de dépendance avec une autre équipe",
+            "Alerter sur une dépendance qui risque de provoquer un retard",
+            "Organiser un échange ou un atelier interéquipes",
+            "Solliciter une équipe externe pour obtenir une contribution ou une décision"
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Plan",
+      "categories": [
+        {
+          "nom": "Escalade, risques, demande d'aide (problème identifié : passé, présent ou futur)",
+          "actions": [
+            "Remonter un risque",
+            "Alerter sur un problème",
+            "Signaler un manque de main-d'œuvre",
+            "Demander des personnes supplémentaires, des compétences particulières",
+            "Demander davantage de délai",
+            "Rendre visible un retard ou une difficulté plutôt que la masquer, expliquer, transparence",
+            "Solliciter l'aide d'experts externes",
+            "Escalader au niveau de l'organisation pour résoudre un conflit entre équipes, demander un arbitrage"
+          ]
+        },
+        {
+          "nom": "Charge, capacité et flux de travail (alignement entre les moyens et les objectifs)",
+          "actions": [
+            "Réduire le nombre de sujets commencés simultanément (WIP)",
+            "Rééquilibrer la charge entre les personnes",
+            "Réserver de la capacité pour les imprévus",
+            "Réduire les interruptions",
+            "Revoir la taille des éléments pris dans le sprint",
+            "Adapter l'engagement de l'équipe à sa capacité réelle",
+            "Mieux gérer les urgences et les demandes entrantes"
+          ]
+        },
+        {
+          "nom": "Pilotage et observation des résultats (visibilité, compréhension de la situation)",
+          "actions": [
+            "Définir une mesure pour vérifier si l'amélioration fonctionne (business value livrée, nombre de story points réalisés, etc.)",
+            "Calculer, suivre un indicateur",
+            "Comparer la situation avant et après une expérimentation",
+            "Analyser les causes d'un délai ou d'un incident",
+            "Vérifier à la prochaine rétrospective si l'action a produit un effet",
+            "Arrêter une expérimentation qui ne donne pas de résultat"
+          ]
+        }
+      ]
+    }
+  ]
+}

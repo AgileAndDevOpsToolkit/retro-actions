@@ -1,0 +1,13 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "printf": true,
+        "/^git status --short && printf '\\\\nRoot files:\\\\n' && ls -la && printf '\\\\nPHP entrypoints/config:\\\\n' && find \\. -maxdepth 2 -type f \\\\\\( -name 'index\\.php' -o -name 'composer\\.json' -o -name '\\.htaccess' \\\\\\) -print$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^php -S 0\\.0\\.0\\.0:8000 -t \\.$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -174,26 +174,27 @@ main{max-width:1180px; margin:0 auto; padding:2rem 1.5rem 4rem}
 </main>
 
 <script>
-// ---- Données chargées depuis actions-retro.json (une ligne = une action, filtrable par colonne) ----
+// ---- Données chargées depuis actions-retro.json : périmètres › catégories › actions ----
 const DATA_URL = "actions-retro.json";
-let DATA = [];
+let DATA = { perimetres: [] };
 
-const PERIMETRES = ["Equipe", "Produit", "Contexte", "Plan"];
-const LABELS = { Equipe: "Équipe", Produit: "Produit", Contexte: "Contexte", Plan: "Plan" };
+// Les clés du schéma et du routage correspondent aux noms du JSON, sans tenir compte des accents.
+const perimetreKey = name => name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+const perimetre = name => DATA.perimetres.find(p => perimetreKey(p.nom) === perimetreKey(name));
+const LABELS = new Proxy({}, { get: (_, name) => perimetre(name)?.nom ?? name });
 const colorOf = p => `var(--c-${p.toLowerCase()})`;
 const softOf  = p => `var(--c-${p.toLowerCase()}-soft)`;
 
-// Filtres par colonne
-const byPerimetre = p => DATA.filter(r => r.perimetre === p);
-const categoriesOf = p => [...new Set(byPerimetre(p).map(r => r.categorie))];
-const actionsOf = (p, c) => DATA.filter(r => r.perimetre === p && r.categorie === c).map(r => r.action);
+// Accès aux données
+const categoriesOf = p => (perimetre(p)?.categories ?? []).map(c => c.nom);
+const actionsOf = (p, c) => perimetre(p)?.categories.find(x => x.nom === c)?.actions ?? [];
 const plural = (n, w) => `${n} ${w}${n > 1 ? "s" : ""}`;
 
 // ---- Routage par hash : #p=Equipe&c=2 ----
 function parseRoute() {
   const q = new URLSearchParams(location.hash.replace(/^#\/?/, ""));
   const p = q.get("p");
-  if (!p || !PERIMETRES.includes(p)) return { screen: "home" };
+  if (!p || !perimetre(p)) return { screen: "home" };
   const cats = categoriesOf(p);
   const ci = q.has("c") ? Number(q.get("c")) : NaN;
   if (Number.isInteger(ci) && cats[ci] !== undefined) return { screen: "actions", p, c: cats[ci], ci };
@@ -280,6 +281,7 @@ async function init() {
     const res = await fetch(DATA_URL, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     DATA = await res.json();
+    if (!Array.isArray(DATA?.perimetres)) throw new Error("Format inattendu : clé 'perimetres' manquante");
   } catch (err) {
     console.error(err);
     $("load-error").hidden = false;
