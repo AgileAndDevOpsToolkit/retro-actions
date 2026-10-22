@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catalogue d'actions de rétro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f2; --surface:#ffffff; --ink:#26282b; --muted:#6b6f75; --line:#595959; --line-soft:#d6d4cd;
+  --focus:#1d5fd1;
+  --c-contexte:#f4cccc; --c-equipe:#d9ead3; --c-plan:#fce5cd; --c-produit:#c9daf8;
+  --c-contexte-soft:#fbe9e9; --c-equipe-soft:#edf5ea; --c-plan-soft:#fdf2e6; --c-produit-soft:#e6eefc;
+  --shadow:0 1px 0 rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1c1d20; --surface:#26282c; --ink:#ecebe6; --muted:#a2a6ad; --line:#c8c8c8; --line-soft:#3d4046;
+    --focus:#7fb0ff;
+    --c-contexte:#6a3a3f; --c-equipe:#35523a; --c-plan:#6a4b2c; --c-produit:#344b75;
+    --c-contexte-soft:#4a2f32; --c-equipe-soft:#2b3d2f; --c-plan-soft:#4a3a29; --c-produit-soft:#2c3a55;
+    --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1c1d20; --surface:#26282c; --ink:#ecebe6; --muted:#a2a6ad; --line:#c8c8c8; --line-soft:#3d4046;
+  --focus:#7fb0ff;
+  --c-contexte:#6a3a3f; --c-equipe:#35523a; --c-plan:#6a4b2c; --c-produit:#344b75;
+  --c-contexte-soft:#4a2f32; --c-equipe-soft:#2b3d2f; --c-plan-soft:#4a3a29; --c-produit-soft:#2c3a55;
+  --shadow:none;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Atkinson Hyperlegible", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size:18px; line-height:1.45; min-height:100vh;
+}
+a,button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus); outline-offset:3px}
+
+/* ---- Header / navigation ---- */
+header{
+  display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+  padding:1rem 1.5rem; border-bottom:1px solid var(--line-soft);
+}
+header h1{font-size:1.05rem; font-weight:700; margin:0; letter-spacing:.01em}
+header h1 a{text-decoration:none}
+.crumbs{display:flex; align-items:center; gap:.4rem; flex-wrap:wrap; margin-left:auto; font-size:.95rem; color:var(--muted)}
+.crumbs a{text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line-soft)}
+.crumbs a:hover{border-bottom-color:var(--ink)}
+.crumbs .sep{opacity:.6}
+.crumbs .current{color:var(--ink); font-weight:700}
+.back{
+  display:inline-flex; align-items:center; gap:.4rem;
+  background:var(--surface); border:1px solid var(--line-soft); border-radius:999px;
+  padding:.45rem 1rem .45rem .8rem; cursor:pointer; box-shadow:var(--shadow);
+}
+.back:hover{border-color:var(--line)}
+.back[hidden]{display:none}
+
+main{max-width:1180px; margin:0 auto; padding:2rem 1.5rem 4rem}
+.screen[hidden]{display:none}
+
+/* ---- Screen 1 : schéma ---- */
+.lead{margin:0 0 1rem; color:var(--muted)}
+.schema-wrap{max-width:1100px; margin:0 auto}
+.schema{width:100%; height:auto; display:block}
+.schema text{font-family:inherit; fill:var(--ink); pointer-events:none}
+.schema .name{font-size:30px}
+.schema .shape{fill:var(--c); stroke:var(--line); stroke-width:1.5; transition:stroke-width .12s, filter .12s}
+.schema .hit{cursor:pointer}
+.schema .hit:hover .shape, .schema .hit:focus-visible .shape{stroke-width:3.5}
+.schema .hit:focus-visible{outline:none}
+.schema .hit:focus-visible .shape{stroke:var(--focus)}
+.schema .flow{fill:none; stroke:var(--line); stroke-width:6; stroke-linecap:round; stroke-linejoin:round}
+.schema .head{fill:var(--line)}
+
+.load-error{max-width:720px; background:var(--surface); border:1.5px solid var(--line-soft); border-radius:16px; padding:1.25rem 1.5rem}
+.load-error h2{margin:0 0 .5rem; font-size:1.3rem}
+.load-error p{margin:0}
+.load-error code{font-size:.9em; background:var(--bg); padding:.05rem .35rem; border-radius:4px}
+
+/* ---- Screens 2 & 3 : badges ---- */
+.title:focus{outline:none}
+.title{margin:0 0 .25rem; font-size:2rem; line-height:1.15; font-weight:700}
+.title .tag{
+  display:inline-block; vertical-align:middle; font-size:.95rem; font-weight:400;
+  background:var(--c); border:1px solid var(--line); border-radius:999px;
+  padding:.15rem .8rem; margin-right:.6rem; position:relative; top:-.25rem;
+}
+.sub{margin:0 0 1.75rem; color:var(--muted)}
+.badges li{display:grid}
+.badges{display:grid; gap:1rem; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); padding:0; margin:0; list-style:none}
+.badge{
+  display:flex; flex-direction:column; gap:.35rem; justify-content:center; min-height:6.5rem;
+  background:var(--c); border:1.5px solid var(--line); border-radius:22px;
+  padding:1.25rem 1.5rem; text-align:left; cursor:pointer; width:100%;
+  font-size:1.2rem; line-height:1.3; font-weight:700; box-shadow:var(--shadow);
+}
+.badge:hover{border-width:3px; padding:calc(1.25rem - 1.5px) calc(1.5rem - 1.5px)}
+.badge small{font-weight:400; color:var(--muted); font-size:.9rem}
+.actions{display:flex; flex-wrap:wrap; gap:.7rem; padding:0; margin:0; list-style:none}
+.action{
+  background:var(--c-soft); border:1.5px solid var(--line-soft); border-radius:999px;
+  padding:.6rem 1.15rem; font-size:1.05rem; line-height:1.3; max-width:100%;
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<header>
+  <h1><a href="#">Catalogue d'actions de rétro</a></h1>
+  <nav class="crumbs" id="crumbs" aria-label="Fil d'Ariane"></nav>
+  <button class="back" id="back" type="button" hidden aria-label="Revenir à l'écran précédent">&#8592; Retour</button>
+</header>
+
+<main>
+  <section class="screen load-error" id="load-error" hidden role="alert">
+    <h2>Impossible de charger les données</h2>
+    <p>Le fichier <code>actions-retro.json</code> doit se trouver dans le même dossier que cette page,
+    et la page doit être servie par un serveur web (le navigateur bloque la lecture d'un fichier local
+    ouvert en <code>file://</code>). En local : <code>python3 -m http.server</code> dans le dossier,
+    puis <code>http://localhost:8000/catalogue-actions-retro.html</code>.</p>
+  </section>
+  <!-- Écran 1 : périmètres -->
+  <section class="screen" id="s-home" aria-labelledby="home-lead" hidden>
+    <p class="lead" id="home-lead">Choisissez le périmètre concerné par l'action d'amélioration.</p>
+    <div class="schema-wrap">
+      <svg class="schema" viewBox="0 0 1240 460" role="group" aria-label="Schéma des quatre périmètres : Contexte, Équipe, Plan, Produit">
+        <!-- flux Équipe/Contexte -> Produit -->
+        <path class="flow" d="M395 290 C 420 250, 455 250, 478 290 S 520 350, 548 300 S 585 180, 625 178 S 720 245, 785 240 S 870 250, 867 160 S 850 75, 905 72 S 985 80, 1010 96"/>
+        <path class="head" d="M 0 0 L -46 -22 L -39 0 L -46 22 Z" transform="translate(1030 109) rotate(32.62)"/>
+
+        <g class="hit" role="button" tabindex="0" data-p="Contexte" style="--c:var(--c-contexte)">
+          <title>Contexte</title>
+          <ellipse class="shape" cx="215" cy="295" rx="176" ry="120"/>
+          <text class="name" x="215" y="255" text-anchor="middle">Contexte</text>
+        </g>
+        <g class="hit" role="button" tabindex="0" data-p="Equipe" style="--c:var(--c-equipe)">
+          <title>Équipe</title>
+          <rect class="shape" x="140" y="278" width="150" height="66" rx="3"/>
+          <text class="name" x="215" y="322" text-anchor="middle">Équipe</text>
+        </g>
+        <g class="hit" role="button" tabindex="0" data-p="Plan" style="--c:var(--c-plan)">
+          <title>Plan</title>
+          <rect class="shape" x="537" y="80" width="153" height="70" rx="3"/>
+          <text class="name" x="613" y="126" text-anchor="middle">Plan</text>
+        </g>
+        <g class="hit" role="button" tabindex="0" data-p="Produit" style="--c:var(--c-produit)">
+          <title>Produit</title>
+          <rect class="shape" x="1035" y="68" width="150" height="68" rx="3"/>
+          <text class="name" x="1110" y="113" text-anchor="middle">Produit</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Écran 2 : catégories -->
+  <section class="screen" id="s-cats" hidden>
+    <h2 class="title" id="cats-title"></h2>
+    <p class="sub" id="cats-sub"></p>
+    <ul class="badges" id="cats-list"></ul>
+  </section>
+
+  <!-- Écran 3 : actions -->
+  <section class="screen" id="s-actions" hidden>
+    <h2 class="title" id="actions-title"></h2>
+    <p class="sub" id="actions-sub"></p>
+    <ul class="actions" id="actions-list"></ul>
+  </section>
+</main>
+
+<script>
+// ---- Données chargées depuis actions-retro.json (une ligne = une action, filtrable par colonne) ----
+const DATA_URL = "actions-retro.json";
+let DATA = [];
+
+const PERIMETRES = ["Equipe", "Produit", "Contexte", "Plan"];
+const LABELS = { Equipe: "Équipe", Produit: "Produit", Contexte: "Contexte", Plan: "Plan" };
+const colorOf = p => `var(--c-${p.toLowerCase()})`;
+const softOf  = p => `var(--c-${p.toLowerCase()}-soft)`;
+
+// Filtres par colonne
+const byPerimetre = p => DATA.filter(r => r.perimetre === p);
+const categoriesOf = p => [...new Set(byPerimetre(p).map(r => r.categorie))];
+const actionsOf = (p, c) => DATA.filter(r => r.perimetre === p && r.categorie === c).map(r => r.action);
+const plural = (n, w) => `${n} ${w}${n > 1 ? "s" : ""}`;
+
+// ---- Routage par hash : #p=Equipe&c=2 ----
+function parseRoute() {
+  const q = new URLSearchParams(location.hash.replace(/^#\/?/, ""));
+  const p = q.get("p");
+  if (!p || !PERIMETRES.includes(p)) return { screen: "home" };
+  const cats = categoriesOf(p);
+  const ci = q.has("c") ? Number(q.get("c")) : NaN;
+  if (Number.isInteger(ci) && cats[ci] !== undefined) return { screen: "actions", p, c: cats[ci], ci };
+  return { screen: "cats", p };
+}
+const go = hash => { location.hash = hash; };
+const hashFor = (p, ci) => ci === undefined ? `#p=${p}` : `#p=${p}&c=${ci}`;
+
+// ---- Rendu ----
+const $ = id => document.getElementById(id);
+function el(tag, attrs = {}, ...children) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "style") n.style.cssText = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v);
+  }
+  for (const c of children) n.append(c);
+  return n;
+}
+
+function renderCrumbs(route) {
+  const c = $("crumbs");
+  c.replaceChildren();
+  if (route.screen === "home") return;
+  c.append(el("a", { href: "#" }, "Périmètres"), el("span", { class: "sep" }, "›"));
+  if (route.screen === "cats") {
+    c.append(el("span", { class: "current" }, LABELS[route.p]));
+  } else {
+    c.append(el("a", { href: hashFor(route.p) }, LABELS[route.p]), el("span", { class: "sep" }, "›"),
+             el("span", { class: "current" }, route.c));
+  }
+}
+
+function renderCats(p) {
+  const cats = categoriesOf(p);
+  $("cats-title").replaceChildren(el("span", { class: "tag", style: `--c:${colorOf(p)}` }, "Périmètre"), LABELS[p]);
+  $("cats-sub").textContent = `${plural(cats.length, "catégorie")} — choisissez celle qui correspond au sujet de la rétro.`;
+  $("cats-list").replaceChildren(...cats.map((c, i) =>
+    el("li", {}, el("button", { class: "badge", type: "button", style: `--c:${colorOf(p)}`, onclick: () => go(hashFor(p, i)) },
+      c, el("small", {}, plural(actionsOf(p, c).length, "action"))))));
+}
+
+function renderActions(p, c) {
+  const acts = actionsOf(p, c);
+  $("actions-title").replaceChildren(el("span", { class: "tag", style: `--c:${colorOf(p)}` }, LABELS[p]), c);
+  $("actions-sub").textContent = `${plural(acts.length, "exemple")} d'actions de rétro.`;
+  $("actions-list").replaceChildren(...acts.map(a =>
+    el("li", { class: "action", style: `--c-soft:${softOf(p)}` }, a)));
+}
+
+function render() {
+  const route = parseRoute();
+  $("s-home").hidden = route.screen !== "home";
+  $("s-cats").hidden = route.screen !== "cats";
+  $("s-actions").hidden = route.screen !== "actions";
+  $("back").hidden = route.screen === "home";
+  renderCrumbs(route);
+  if (route.screen === "cats") renderCats(route.p);
+  if (route.screen === "actions") renderActions(route.p, route.c);
+  document.title = route.screen === "home" ? "Catalogue d'actions de rétro"
+    : route.screen === "cats" ? `${LABELS[route.p]} — Catalogue d'actions de rétro`
+    : `${route.c} — Catalogue d'actions de rétro`;
+  window.scrollTo({ top: 0 });
+  const focusTarget = route.screen === "home" ? null : document.querySelector(".screen:not([hidden]) .title");
+  if (focusTarget) { focusTarget.tabIndex = -1; focusTarget.focus({ preventScroll: true }); }
+}
+
+// Bouton Retour : remonte d'un niveau (le bouton Précédent du navigateur fonctionne aussi)
+$("back").addEventListener("click", () => {
+  const r = parseRoute();
+  go(r.screen === "actions" ? hashFor(r.p) : "#");
+});
+
+// Clics et clavier sur le schéma
+document.querySelectorAll(".schema .hit").forEach(g => {
+  const open = () => go(hashFor(g.dataset.p));
+  g.addEventListener("click", open);
+  g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
+});
+
+async function init() {
+  try {
+    const res = await fetch(DATA_URL, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    DATA = await res.json();
+  } catch (err) {
+    console.error(err);
+    $("load-error").hidden = false;
+    $("s-home").hidden = true;
+    return;
+  }
+  window.addEventListener("hashchange", render);
+  render();
+}
+init();
+</script>
+</body>
+</html>
